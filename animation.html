@@ -1,0 +1,79 @@
+
+<!DOCKTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<style>
+.mainmarioBg{
+             width:100%;
+			 height:100vh;
+			 background-image:url(mariobg.jpg);
+			 background-size:100% 100%;
+			 position:relative;
+			 }
+			 
+.mario img{
+           position:absolute;
+            bottom:10px;
+			animation-name:mariorun;
+			animation-duration:6s;
+			animation-iteration-count:infinite;
+			animation-timing-function:linear;
+}
+ @keyframes mariorun {
+                       0%   {left:o%;}
+					   15%  {left:15%;}
+					   25%  {left:25%;}
+					   50%  {left:50%;}
+					   75%  {left:75%;}
+					   100% {left:8o%;}
+}
+h2{
+		color:blue;
+		text-transform:uppercase;
+		font-size:3em;
+		letter-spacing:2px;
+		position:absolute;
+		top:20%;
+		left:25%;
+		animation:mariotext 1s linear;
+		animation-iteration-count:infinite;
+		animation-delay:1.8s;
+}
+@keyframes mariotext{
+                     0%   {font-size:3em;}
+                     100%  {font-size:4em; left:25%;}
+					 }
+@media screen and (min-width:500px) {
+.mario img{
+			bottom:20px;
+}
+ @keyframes mariorun {
+                       0%   {left:o%;}
+					   2%    {left:2.5%;}
+					   5%   {leftt:5%;}
+					   25%  {left:20%;}
+					   15%  {left:10%;}
+					   50%  {left:25%;}
+					   75%  {left:55%;}
+					   100% {left:88%;}
+}
+@media screen and (max-width:472px) {
+.mario img{
+			bottom:20px;
+}
+ @keyframes mariorun {
+                      
+</style>
+</head>
+<div class="mainmarioBg">
+<div class="mario">
+<img src="C:\Users\SONY\Music\animation\mariorun.gif" width=200px" height:500;>
+<h2>Mario Run </h2>
+</div>
+</div>
+</body>
+</html>
+
+
